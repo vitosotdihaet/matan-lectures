@@ -22,8 +22,12 @@ $$
 $\sum\limits_{n=1}^{+\infty}a_n$ - сходится $\Leftrightarrow$
 
 $$
-\Leftrightarrow \exists S = \lim_{n\to\infty}S_n \Leftrightarrow \forall \varepsilon > 0: \exists n_{\varepsilon} \in \mathbb N:\forall n, m \in \mathbb N: n, m > n_{\varepsilon} |S_n - S_m| < \varepsilon \Leftrightarrow \\
-\Leftrightarrow \forall n > n_\varepsilon, \forall p \in \mathrm{Z}, p \ge 0 \Rightarrow |S_{n-1} - S_{m + p}| < \varepsilon, \text{ но } |S_{n + p} - S_{n - 1}| = \\
+\Leftrightarrow \exists S = \lim_{n\to\infty}S_n \Leftrightarrow \forall \varepsilon > 0: \exists n_{\varepsilon} \in \mathbb N:\forall n, m \in \mathbb N: n, m > n_{\varepsilon} |S_n - S_m| < \varepsilon \Leftrightarrow
+$$
+$$
+\Leftrightarrow \forall n > n_\varepsilon, \forall p \in \mathrm{Z}, p \ge 0 \Rightarrow |S_{n-1} - S_{m + p}| < \varepsilon, \text{ но } |S_{n + p} - S_{n - 1}| =
+$$
+$$
 = |a_a + ... + a_{n+p} - (a_1 + ... + a_{n-1})| = |a_n + ... + a_n + p|.\ \blacksquare
 $$
 
