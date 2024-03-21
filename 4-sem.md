@@ -80,3 +80,23 @@ $\sum\limits_{n=1}^{+\infty}b_n$ сходится $\Rightarrow \sum\limits_{k=n_
     Следовательно $\dfrac{a_n}{b_n} > c > 0 \Rightarrow b_n < \dfrac{1}{c}a_n \Rightarrow b_n = O(a_n)$, следовательно, так как $\sum\limits_{n=1}^{+\infty}b_n$ расходится $\Rightarrow \sum\limits_{n=1}^{+\infty}a_n$ расходится по сравнительному признаку. $\blacksquare$
 
 ## Теорема (признак Даламбера)
+**Фор-ка.** $\sum\limits_{n=1}^{+\infty}a_n, \forall n \in \N$, если $\dfrac{a_{n+1}}{a_n} \le k \lt 1, \forall n \Rightarrow$ ряд сходится, если $\dfrac{a_{n+1}}{a_n} \ge 1, \forall n \Rightarrow$ ряд сходится
+
+**Док-во.**
+
+1. $\dfrac{a_{n+1}}{a_n} \le k \lt 1 \Rightarrow a_n = \dfrac{a_n}{a_{n-1}} \cdot ... \cdot \dfrac{a_2}{a_1}\cdot a_1 \le k^{n-1}\cdot a_1 = b_n$
+
+   $\sum\limits_{n=1}^{+\infty}b_n = a_1\sum\limits_{n=1}^{+\infty}k^{n-1} = a_1\dfrac{1}{1-k}$
+2. $\dfrac{a_{n+1}}{a_n} \ge 1 \Rightarrow a_{n+1}\ge a_n \Rightarrow a_n \ge ... \ge a_1 \lt 0 \Rightarrow a_n \ge a_1, \forall n \Rightarrow \lim\limits_{n\to +\infty}a_n \ne 0.\ \blacksquare$
+
+## Следствие
+**Фор-ка.** Дан ряд $\sum\limits_{n=1}^{+\infty}a_n, \exists \lim\limits_{n\to +\infty}\dfrac{a_{n+1}}{a_n}=k$, тогда, если $k \lt 1\Rightarrow$ ряд сходится, $k \gt 1\Rightarrow$ ряд расходится
+
+**Док-во.**
+1. $k \lt 1: r \in (k, 1), \varepsilon = r - k > 0 \Rightarrow \exists n_0 \in \N, \forall n \gt n_0: \Big|\dfrac{a_{n+1}}{a_n} - k\Big| \lt r - k\Rightarrow \dfrac{a_{n+1}}{a_n} \lt r \lt 1, \forall n \gt n_0 \Rightarrow$ ряд сходится по Даламберу.
+2. $k \gt 1:$
+   - $1 \lt k \lt +\infty \Rightarrow r \in (1, k) \Rightarrow \varepsilon = k - r \Rightarrow \exists n_0 \in \N:$
+
+        $\forall n \lt n_0: \Big|\dfrac{a_{n+1}}{a_n} - k\Big| \lt k - r \Rightarrow r - k \lt \dfrac{a_{n+1}}{a_n} - k \Rightarrow 1 \lt r \lt \dfrac{a_{n+1}}{a_n} \Rightarrow$ расходится по Даламберу
+    - $k=+\infty\Rightarrow\varepsilon = 1, ...$ - дз. $\blacksquare$
+
